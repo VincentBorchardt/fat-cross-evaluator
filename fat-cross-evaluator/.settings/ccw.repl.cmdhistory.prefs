@@ -1,2 +1,2 @@
-cmdhistory=["(simple-weights)" "simple-weights" "(total-weights simple-weights)"]
+cmdhistory=["(simple-weights)" "simple-weights" "(total-weights simple-weights)" "(simple-weights \:has-iron)" "(simple-weights \:city-on-hill)" "(map \:has-copper [simple-weights simple-weights-b])"]
 eclipse.preferences.version=1

@@ -16,7 +16,7 @@
 ; x = integer, relative to bfc-center
 ; y = integer, relative to bfc-center
 ; terrain = grass/plains/tundra/desert/ice
-; bonus = corn/gems/etc
+; resource = corn/gems/etc
 ; height = 0/1/2/3 for peak/hill/flat/water
 ; feature = jungle/forest/oasis
 ; auto-routed = true or false (e.g. if a city is planted here, will it automatically connect to an existing city that you own?)
@@ -30,6 +30,14 @@
    :has-iron 0.0
    :has-ancient-luxury 0.6
    :has-classical-luxury 0.0})
+
+(def simple-weights-b
+  {:city-on-hill 0.5
+   :has-copper 0.6
+   :has-iron 0.3
+   :has-ancient-luxury 0.0
+   :has-classical-luxury 0.0})
+
 
 (deftest total-weights-test
   (testing "total-weights works"
