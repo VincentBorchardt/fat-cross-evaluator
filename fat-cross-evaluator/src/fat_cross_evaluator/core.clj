@@ -11,3 +11,7 @@
 
 (defn has-resource? [tile-list resource]
   (reduce or (map #(= % resource) (city-resources tile-list))))
+
+(defn on-plains-hill? [tile-list]
+  false)
+
